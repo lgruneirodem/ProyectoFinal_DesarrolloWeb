@@ -1,0 +1,117 @@
+:root
+{
+    --nuestroColor: rgb(140, 230, 190);
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+h1
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ratonMano
+{
+    cursor: pointer;
+}
+
+.contenedorFormulario
+{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    text-align: center;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.columnasFormulario
+{
+    display: flex;
+    justify-content: center;
+}
+
+.columnaFormulario
+{
+    flex: 10;
+}
+
+.lineaVertical
+{
+    flex: 1;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-left: 1px solid #000000;
+}
+
+.botonesCantidad
+{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.botonCantidad
+{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.botonForm
+{
+    text-decoration: none;
+    color: black;
+    background-color: var(--nuestroColor);
+    text-decoration: none;
+    height: 30px;
+    border: 1px solid #000000;
+}
+
+footer
+{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: var(--nuestroColor);
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+footer a
+{
+    text-decoration: none;
+}
+
+.regreso
+{
+    background: none;
+    border-width: 0px;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    border-radius: 100%;
+}
+
+.regreso:hover
+{
+    background-color: white;
+    border-width: 1px;
+}

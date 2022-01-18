@@ -1,0 +1,81 @@
+:root
+{
+    --nuestroColor: rgb(140, 230, 190);
+    --segundoColor: #def1f8;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.logo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+h1, h2, h3, p, li, a, form, button, input
+{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+h1, h2
+{
+    width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2
+{
+    font-weight: normal;
+    line-height: 130%;
+}
+
+.ratonMano
+{
+    cursor: pointer;
+}
+
+.login
+{
+    text-align: center;
+}
+
+.botonVolver
+{
+    color: black;
+    background-color: var(--nuestroColor);
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 25px;
+}
+.botonVolver a
+{
+    color: black;
+    text-decoration: none;
+}
+
+footer
+{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    background-color: var(--nuestroColor);
+    text-align: center;
+    padding: 1%;
+}
+
+footer a
+{
+    text-decoration: none;
+}

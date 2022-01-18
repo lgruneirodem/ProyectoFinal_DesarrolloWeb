@@ -1,0 +1,95 @@
+:root
+{
+    --nuestroColor: rgb(140, 230, 190);
+    --segundoColor: #def1f8;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.logo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+h1, h2, h3, p, li, a, form, button, input
+{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+h1, h2
+{
+    width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2
+{
+    font-weight: normal;
+    line-height: 130%;
+}
+.container-coment{
+    display: flex; 
+    
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+}
+.textfield{
+    align-items:flex-start;
+    
+    margin-bottom: 2vh;
+
+}
+.UsuarioText{
+    margin-top: 2vh;
+    margin-right: 44vw;
+
+
+}
+.ratonMano
+{
+    cursor: pointer;
+}
+
+.botonForm
+{
+    color: black;
+    background-color: var(--nuestroColor);
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 25px;
+}
+
+footer
+{
+
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-top: 5vh;
+    background-color: var(--nuestroColor);
+    text-align: center;
+    padding: 1%;
+}
+
+footer a
+{
+    text-decoration: none;
+}

@@ -1,0 +1,536 @@
+:root{
+    --nuestroColor: rgb(140, 230, 190);
+    --blanco: #D6D2C4;
+    --segundoColor: #def1f8;
+}
+
+/*Nav de sesión*/
+.estadoSesion
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-bottom: solid 1px black;
+    background-color: var(--nuestroColor);
+}
+
+.estadoSesion p
+{
+    margin: 0px;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+/*Cambios de los elementos generales*/
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, p, li, a, form, button, input
+{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+
+/*cambios del header */
+header
+{
+    margin-bottom: 3vh;
+    text-align: center;
+    display: block;
+}
+
+h1
+{
+    text-align: center;
+    width: 75%;
+    line-height: 120%;
+    padding-bottom: 20px;
+}
+
+.logo
+{
+    width: 100%;
+    padding-top: 2vh;
+}
+
+.texto_header h1
+{
+    width: 75%;
+    margin-left: 13vw;
+    text-align: center;
+}
+.texto_header h2
+{
+    width: 75%;
+    text-align: center;
+    padding-left: 15vw;
+    margin-bottom: 2vh;
+}
+
+/*Cambios del menú mediante el nav*/
+.navPrincipal
+{
+    width: 100%;
+    background-color: var(--nuestroColor);
+    text-align: center;
+}
+
+.navPrincipal ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.navPrincipal li
+{
+    display: inline;
+}
+
+.navPrincipal a
+{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: black;
+    text-decoration: none;
+}
+
+.navPrincipal li:hover
+{
+    background-color: #def1f8;
+    animation-name: navHover;
+    animation-duration: 0.25s;
+}
+
+.ratonMano
+{
+    cursor: pointer;
+}
+
+/* Elementos donde se explicar de qué va el crowfounding.*/
+
+.informacion_principal{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+
+}
+#texto_informacion{
+    margin-bottom: 2vh;
+    flex: 2;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 20px;
+}
+
+.columnas_informacion
+{
+    flex: 3;
+}
+
+.columnas_informacion img{
+    height: 100%;    
+    width: 100%;
+    object-fit: cover;
+}
+
+.recaudacion{
+    font-weight: bold;
+    margin-top: 2vh;
+    
+}
+.personas_apoyo{
+    flex: 1;
+}
+
+.dinero{
+    display: flex;
+}
+
+.textoPorcentaje{
+    flex: 1;
+    margin-top: 1vh;
+}
+
+.cont{
+    margin-top: 30px;
+    height: 15px;
+    width: 100%;
+    background: rgba(0, 200, 0, .3);
+    border-radius: 50px;
+}   
+.cont .loader{
+    height: 15px;
+    position: relative;
+    box-sizing: border-box;
+    width: 0%;
+    background: rgba(0, 200, 0, .8);
+    border-radius: 50px;
+    transition: width 1.5s linear
+}
+.cont .loader:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 50px;
+    width: 100%;
+    background: linear-gradient(to  right, rgba(0, 200, 0, .3), rgba(0, 100, 0, .8));
+    animation: purge 4s infinite ease-out
+}
+
+@keyframes purge{
+    0%{
+        opacity: 0;
+        width: 0%;
+
+    }
+    50%{
+        opacity: .5
+    }
+    100%{
+        opacity: 0;
+        width: 100%;
+    }
+}
+.cont .loader label{
+    font-size: 12px;
+    position: absolute;
+    right: -10px;
+    text-align: center;
+    top: -25px;
+    font-weight: 600;
+    transition: .1s;
+}
+.cont .loader:after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    height: 50%;
+    width: 2px;
+    background: rgba(0, 200, 0, .8);
+}
+.cont:hover .loader label{
+    transform: scale(1.5);
+    transition: .1s;
+}
+
+/*Layout de los botones de donación*/
+.botones
+{
+    display: flex;
+}
+
+.button
+{
+    flex: 1;
+    height: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: var(--nuestroColor);
+    border-radius: 6px;
+    border: 1px solid black;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: white;
+}
+
+#enlace_donar
+{
+    color: white;
+    text-decoration: none;
+}
+
+#enlace_donar:hover{
+    color: var(--nuestroColor);
+}
+
+.botones button:hover
+{
+    color: var(--nuestroColor);
+    background-color: #ffffff;
+}
+
+.botones button:hover > #enlace_donar
+{
+    color: var(--nuestroColor);
+    background-color: #ffffff;
+}
+
+/* Imagenes de la parte inferior de la web*/
+.imagenes_secundarias{
+    display:flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 30px;
+}
+
+.imagenes_desastre{
+    flex:1;
+    width: 30vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 5vh;  
+}
+
+/* Layout de las imágenes de abajo*/
+
+.imagenes_desastre img{
+    height: 40vh;
+    padding:5%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+/* Layout de los comentarios*/
+.comentarios
+{
+    background-color: #efefef;
+    margin: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.comentario
+{
+    width: 90%;
+    display: flex;
+    border: #e6e6e6;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    margin-bottom: 10px;
+    padding-right: 5%;
+    border-radius: 10px;
+    line-height: 120%;
+}
+.nuevoComentario
+{
+    display: flex;
+    padding-right: 5%;
+    margin-bottom: 30px;
+}
+.comentar{
+
+    flex: 10;
+    margin-right: 2%;
+}
+.botonComentar{
+    flex: 1;
+    color: black;
+    background-color: var(--nuestroColor);
+    text-decoration: none;
+}
+.columna_foto
+{
+    flex: 1;
+}
+
+.foto_comentador
+{
+    width: 60px;
+    margin: 20px;
+    border-radius: 100%;
+}
+
+.columna_comentario
+{
+    flex: 10;
+}
+/*Layout de login*/
+.sistemaLogin{
+    display:flex;
+    width: 100%;
+
+}
+.login
+{
+    flex:3;
+    text-align: center;
+    padding-left: 7vw;
+
+}
+.registro{
+    text-align: center;
+    flex:3;
+    padding-right: 7vw;
+    width: 40%;
+}
+
+
+.inputForm
+{
+    width: 40%;
+}
+
+.botonForm
+{
+    color: black;
+    background-color: var(--nuestroColor);
+    text-decoration: none;
+    width: 40%;
+    height: 30px;
+    margin-bottom: 25px;
+}
+.botonForm:hover
+{
+    background-color: var(--segundoColor);
+    border: none;
+}
+
+/* Layout del pie de página*/
+footer{
+    margin: 0px;
+    background-color: var(--nuestroColor);
+    text-align: center;
+    padding: 1%;
+}
+footer a
+{
+    text-decoration: none;
+}
+
+.regreso
+{
+    background: none;
+    border-width: 0px;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    border-radius: 100%;
+}
+
+.regreso:hover
+{
+    background-color: white;
+    border-width: 1px;
+}
+
+@keyframes navHover
+{
+    from
+    {
+        background-color: var(--nuestroColor);
+        border-top-right-radius: 100%;
+        border-top-left-radius: 100%;
+    }
+    to
+    {
+        background-color: var(--segundoColor);
+        border-top-right-radius: 0%;
+        border-top-left-radius: 0%;
+    }
+}
+
+@media only screen and (max-width: 640px)
+{
+    .comentario_Incio
+    {
+        display: block;
+        background-color: #efefef;
+        margin-top: 1vh;
+        padding-top: 10px;
+        padding-left: 4vw;
+        margin: 0%;
+        padding-bottom: 25px;
+    }
+
+    .login
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .comentarios
+    {
+        width: 95%;
+        padding: 0%;
+        padding-bottom: 10px;
+    }
+
+    .comentario
+    {
+        width: 95%;
+        padding-right: 25px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .inputForm
+    {
+        width: 50%;
+    }
+
+    .imagenes_secundarias
+    {
+        display: block;
+    }
+
+    .imagenes_desastre
+    {
+        width: 80%;
+        padding-left: 5vh;
+    }
+}
+
+@media only screen and (max-width: 1020px)
+{
+    .informacion_principal
+    {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 720px)
+{
+    h2
+    {
+        width: 90%;
+        font-weight: normal;
+    }
+    .informacion_principal
+    {
+        display: block;
+    }
+
+    .foto_principal
+    {
+        width:100%;
+    }
+
+    .columnas_informacion
+    {
+        width:100%;
+    }
+    .comentario
+    {
+        width: 90%;
+        padding-right: 25px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 420px)
+{
+    .foto_comentador
+    {
+        display: none;
+    }
+}
